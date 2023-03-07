@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var flag = true;
+      function changeimg() {
+        var img = document.getElementById("image");
+        console.log("re");
+        if (flag == true) {
+          img.src = "image2.jpg";
+          alt = "Responsive image";
+          flag = false;
+        } else {
+          img.src = "image1.jpg";
+          flag = true;
+        }
+      }
+
+      function alt(num) {
+        console.log(num);
+      }
+
+      //   const btn = document.getElementById("change");
+      //   btn.addEventListener("click", changeimg);
+    </script>
+  </head>
+  <body>
+    <div>
+      <img src="./image1.jpg" id="image" />
+      <button id="bttn" onclick="changeimg()">change</button>
+      <button id="btn2" onclick="alt('btn2')">b2</button>
+      <button id="btn3" onclick="alt('btn3')">b3</button>
+      <button id="btn4" onclick="alt('btn4')">b4</button>
+      <button id="btn5" onclick="alt('btn5')">b5</button>
+    </div>
+  </body>
+</html>
